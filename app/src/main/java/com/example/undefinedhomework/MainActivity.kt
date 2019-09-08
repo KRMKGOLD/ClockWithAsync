@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.support.constraint.ConstraintSet
+import android.util.Log
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
 
@@ -36,7 +37,9 @@ class MainActivity : AppCompatActivity() {
                     secondTextView.text = second.toString()
                 }
 
-                Thread.sleep(1000)
+                try {
+                    Thread.sleep(1000)
+                } catch (e : Exception) { }
             }
         })
 
@@ -48,4 +51,3 @@ class MainActivity : AppCompatActivity() {
         timeThread.interrupt()
     }
 }
-
