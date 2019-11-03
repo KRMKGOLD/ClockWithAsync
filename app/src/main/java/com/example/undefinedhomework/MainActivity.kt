@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.support.constraint.ConstraintSet
-import android.util.Log
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
 
